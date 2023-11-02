@@ -1,15 +1,8 @@
-let years = 5
+// importera funktioner
+// Obs! Vi behöver en "package.json" för att det ska fungera när vi inte arbetar i webbläsaren. Skriv: "npm init -y"
+import { calculateBalance } from './bankFunctions.js'
 
-function calculateBalance() {
-	let balance = 25000  // saldot på kontot
-	let interest = 1.05  // 5% ränta
-	// Efter 5 år:
-	for( let i=0; i < years; i++ ) {
-		balance = balance * interest
-		console.log(`År ${i + 1} har vi ${balance} kr på kontot.`);
-	}
-	return balance
-}
+let years = 200
 
 // Alternativ loop, med while i stället för for
 // let i = 0
@@ -18,6 +11,6 @@ function calculateBalance() {
 // 	i++
 // }
 
-let customerBalance = calculateBalance()
+let customerBalance = calculateBalance(years)
 let balanceRounded = Math.round(customerBalance)
 console.log(`Efter ${years} år finns det ${balanceRounded} kr på kontot.`);

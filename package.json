@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "name": "03-moduler",
+  "version": "1.0.0",
+  "description": "Funktioner och moduler",
+  "main": "bankFunctions.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ha-fed23-js/03-moduler.git"
+  },
+  "keywords": ["modules", "functions"],
+  "author": "David Andersson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ha-fed23-js/03-moduler/issues"
+  },
+  "homepage": "https://github.com/ha-fed23-js/03-moduler#readme"
+}
